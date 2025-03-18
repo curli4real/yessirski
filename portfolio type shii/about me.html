@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Barnaja - Crafting My Path In Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <header class="header">
+            <a href="main.html" title="Portfolio Home">
+            <h2>Crafting My Path in <span class="highlight" title="sus">Tech</span></h2>
+            </a>
+
+            <nav>
+                <a href="main.html" title="homie" class="on-tab">Home</a>
+                <a href="about me.html" title="peep about me" class="on-tab">Peep</a>
+                <a href="#contact" title="hit me up!" class="on-tab">Contact</a>      
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <div class="content">
+            <p><b>This example demonstrates how to slide down a header and navbar when the user starts to scroll the page.</b></p>
+            <p>Scroll down this frame to see the effect!</p> <img src="img/dab me up.jpg" title="dap me up broski!">
+            <p>Scroll to the top to hide the header and navbar.</p>
+            <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </main>
+
+    <p></p>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0"; // Show header and navbar
+            } else {
+                document.getElementById("navbar").style.top = "-100px"; // Hide header and navbar (adjust height if necessary)
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>
